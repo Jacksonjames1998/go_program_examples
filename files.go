@@ -2,9 +2,10 @@ package main
 
 import "fmt"
 
-func add(x int, y int) int{
-	var sum = x+y
-	return sum
+func calc(x int, y int) (int, int){
+	var out1 = x+y
+	var out2 =x-y
+	return out1, out2
 }
 
 func main(){
@@ -17,8 +18,8 @@ func main(){
 		fmt.Println("hai jackson",k)
 	}
 
-	num1 := 1
-	num2 := 2
-	result := add(num1, num2)
-	fmt.Println(result)
+	num1 := 56
+	num2 := 67
+	result1, result2 := calc(num1, num2)
+	fmt.Println(result1, result2)
 }
